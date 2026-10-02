@@ -1,0 +1,374 @@
+/* =====================================
+   ADMIN LOGIN
+===================================== */
+
+
+.page-admin-login * {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+/* =====================================
+   BODY
+===================================== */
+
+.page-admin-login {
+
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 30, 50, 0.88),
+            rgba(0, 30, 50, 0.88)
+        ),
+        url("../assets/library-background.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+}
+
+
+
+/* =====================================
+   CONTAINER
+===================================== */
+
+.page-admin-login .login-container {
+
+    width: 100%;
+
+    padding: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+
+/* =====================================
+   CARD
+===================================== */
+
+.page-admin-login .login-card {
+
+    width: 100%;
+
+    max-width: 450px;
+
+    padding: 40px;
+
+    background:
+        rgba(255, 255, 255, 0.14);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(14px);
+
+    box-shadow:
+        0 15px 40px
+        rgba(0, 0, 0, 0.4);
+
+}
+
+
+
+/* =====================================
+   LOGO
+===================================== */
+
+.page-admin-login .logo {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #00c8ff;
+
+    border-radius: 50%;
+
+    font-size: 35px;
+
+}
+
+
+
+/* =====================================
+   HEADING
+===================================== */
+
+.page-admin-login .login-card h1 {
+
+    text-align: center;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+
+}
+
+
+
+.page-admin-login .subtitle {
+
+    text-align: center;
+
+    color: #dce7ed;
+
+    margin-bottom: 30px;
+
+    line-height: 1.5;
+
+}
+
+
+
+/* =====================================
+   FORM
+===================================== */
+
+.page-admin-login .form-group {
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.page-admin-login .form-group label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+}
+
+
+
+.page-admin-login .form-group input {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    font-size: 15px;
+
+}
+
+
+
+.page-admin-login .form-group input:focus {
+
+    box-shadow:
+        0 0 0 2px #00c8ff;
+
+}
+
+
+
+/* =====================================
+   MESSAGE
+===================================== */
+
+.page-admin-login .message {
+
+    min-height: 20px;
+
+    margin-bottom: 10px;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+
+.page-admin-login .message.error {
+
+    color: #ff8f8f;
+
+}
+
+
+
+.page-admin-login .message.success {
+
+    color: #7dffb2;
+
+}
+
+
+
+/* =====================================
+   LOGIN BUTTON
+===================================== */
+
+.page-admin-login button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #1976d2;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+
+.page-admin-login button:hover {
+
+    background-color: #0d5eac;
+
+}
+
+
+
+/* =====================================
+   REGISTER LINK
+===================================== */
+
+.page-admin-login .register-link {
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #dce7ed;
+
+    font-size: 14px;
+
+}
+
+
+
+.page-admin-login .register-link a {
+
+    color: #00c8ff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    margin-left: 5px;
+
+}
+
+
+
+.page-admin-login .register-link a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+/* =====================================
+   BACK LINK
+===================================== */
+
+.page-admin-login .back-link {
+
+    text-align: center;
+
+    margin-top: 18px;
+
+}
+
+
+
+.page-admin-login .back-link a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+}
+
+
+
+.page-admin-login .back-link a:hover {
+
+    color: #00c8ff;
+
+}
+
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+    .page-admin-login .login-card {
+
+        padding: 30px 22px;
+
+    }
+
+
+    .page-admin-login .login-card h1 {
+
+        font-size: 25px;
+
+    }
+
+}

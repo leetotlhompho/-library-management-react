@@ -1,0 +1,749 @@
+/* =====================================
+   TRANSACTIONS PAGE
+   COMMUNITY LIBRARY
+===================================== */
+
+.page-transactions * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+   BODY
+===================================== */
+
+.page-transactions {
+
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 30, 50, 0.88),
+            rgba(0, 30, 50, 0.88)
+        ),
+        url("../assets/library-background.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    color: white;
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+.page-transactions header {
+
+    min-height: 70px;
+
+    background-color: #0b1f33;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 50px;
+}
+
+
+.page-transactions .logo {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #00c8ff;
+}
+
+
+.page-transactions nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+}
+
+
+.page-transactions nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.page-transactions nav a:hover {
+
+    color: #00c8ff;
+}
+
+
+.page-transactions nav a.active {
+
+    color: #00c8ff;
+}
+
+
+/* =====================================
+   MAIN
+===================================== */
+
+.page-transactions main {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 45px 25px 60px;
+}
+
+
+/* =====================================
+   PAGE HEADER
+===================================== */
+
+.page-transactions .page-header {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.page-transactions .page-header h1 {
+
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+
+.page-transactions .page-header p {
+
+    font-size: 17px;
+
+    color: #dce7ed;
+}
+
+
+/* =====================================
+   TRANSACTION CARDS
+===================================== */
+
+.page-transactions .transaction-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+
+.page-transactions .transaction-card {
+
+    background-color:
+        rgba(255, 255, 255, 0.15);
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 10px 35px
+        rgba(0, 0, 0, 0.35);
+}
+
+
+.page-transactions .transaction-card h2 {
+
+    font-size: 27px;
+
+    margin-bottom: 8px;
+}
+
+
+.page-transactions .transaction-card p {
+
+    color: #dce7ed;
+
+    margin-bottom: 25px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================
+   FORM
+===================================== */
+
+.page-transactions form {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.page-transactions label {
+
+    margin-bottom: 7px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+.page-transactions input,
+.page-transactions select {
+
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 20px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: white;
+
+    color: #222;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+.page-transactions input:focus,
+.page-transactions select:focus {
+
+    box-shadow:
+        0 0 0 2px #00c8ff;
+}
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+.page-transactions button {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #1976d2;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.page-transactions button:hover {
+
+    background-color: #0d5eac;
+}
+
+
+/* =====================================
+   DEDUCT BUTTON
+===================================== */
+
+.page-transactions .deduct-button {
+
+    background-color: #c0392b;
+}
+
+
+.page-transactions .deduct-button:hover {
+
+    background-color: #962d22;
+}
+
+
+/* =====================================
+   HISTORY CARD
+===================================== */
+
+.page-transactions .history-card {
+
+    background-color:
+        rgba(255, 255, 255, 0.15);
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 10px 35px
+        rgba(0, 0, 0, 0.35);
+}
+
+
+.page-transactions .history-header {
+
+    margin-bottom: 20px;
+}
+
+
+.page-transactions .history-header h2 {
+
+    font-size: 27px;
+
+    margin-bottom: 8px;
+}
+
+
+.page-transactions .history-header p {
+
+    color: #dce7ed;
+}
+
+
+/* =====================================
+   CLEAR HISTORY BUTTON
+===================================== */
+
+.page-transactions .clear-history-container {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-bottom: 18px;
+}
+
+
+.page-transactions .clear-history-button {
+
+    width: auto;
+
+    min-width: 230px;
+
+    padding: 11px 20px;
+
+    background-color: #c0392b;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.page-transactions .clear-history-button:hover {
+
+    background-color: #962d22;
+
+    transform: translateY(-1px);
+}
+
+
+/* =====================================
+   TABLE WRAPPER
+===================================== */
+
+.page-transactions .table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+/* =====================================
+   TABLE
+===================================== */
+
+.page-transactions table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+
+    color: #222;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+
+.page-transactions thead {
+
+    background-color: #0b1f33;
+
+    color: white;
+}
+
+
+.page-transactions th {
+
+    padding: 15px;
+
+    text-align: left;
+
+    font-size: 15px;
+}
+
+
+.page-transactions td {
+
+    padding: 14px 15px;
+
+    border-bottom:
+        1px solid #dddddd;
+
+    font-size: 14px;
+}
+
+
+.page-transactions tbody tr:hover {
+
+    background-color: #f1f5f7;
+}
+
+
+.page-transactions tbody tr:last-child td {
+
+    border-bottom: none;
+}
+
+
+/* =====================================
+   TRANSACTION TYPE
+===================================== */
+
+.page-transactions .transaction-type {
+
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 15px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================
+   ADD STOCK
+===================================== */
+
+.page-transactions .add-stock {
+
+    background-color: #d1e7dd;
+
+    color: #0f5132;
+}
+
+
+/* =====================================
+   DEDUCT STOCK
+===================================== */
+
+.page-transactions .deduct-stock {
+
+    background-color: #f8d7da;
+
+    color: #842029;
+}
+
+
+/* =====================================
+   BORROW
+===================================== */
+
+.page-transactions .borrow {
+
+    background-color: #cfe2ff;
+
+    color: #084298;
+}
+
+
+/* =====================================
+   RETURN
+===================================== */
+
+.page-transactions .return {
+
+    background-color: #e2e3e5;
+
+    color: #41464b;
+}
+
+
+/* =====================================
+   EMPTY MESSAGE
+===================================== */
+
+.page-transactions .empty-message {
+
+    text-align: center;
+
+    padding: 30px;
+
+    color: #666;
+}
+
+
+/* =====================================
+   ADMIN
+===================================== */
+
+.page-transactions .admin-info {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+
+/* =====================================
+   DASHBOARD BUTTON
+===================================== */
+
+.page-transactions .dashboard-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-top: 20px;
+
+}
+
+
+.page-transactions .dashboard-button {
+
+    display: inline-block;
+
+    padding: 10px 28px;
+
+    background-color: #0b1f33;
+
+    color: #00c8ff;
+
+    border: 1px solid #00c8ff;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.page-transactions .dashboard-button:hover {
+
+    background-color: #00c8ff;
+
+    color: #0b1f33;
+
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.page-transactions footer {
+
+    text-align: center;
+
+    background-color: #0b1f33;
+
+    padding: 18px;
+
+    margin-top: 20px;
+}
+
+
+.page-transactions footer p {
+
+    font-size: 15px;
+
+    color: #dce7ed;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+    .page-transactions header {
+
+        padding: 15px 25px;
+    }
+
+
+    .page-transactions nav {
+
+        gap: 12px;
+    }
+
+
+    .page-transactions nav a {
+
+        font-size: 14px;
+    }
+
+
+    .page-transactions .transaction-container {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+    .page-transactions header {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+
+    .page-transactions .logo {
+
+        font-size: 20px;
+    }
+
+
+    .page-transactions nav {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .page-transactions main {
+
+        padding: 30px 15px 45px;
+    }
+
+
+    .page-transactions .page-header h1 {
+
+        font-size: 30px;
+    }
+
+
+    .page-transactions .transaction-card,
+.page-transactions .history-card {
+
+        padding: 22px;
+    }
+
+
+    .page-transactions .transaction-card h2,
+.page-transactions .history-header h2 {
+
+        font-size: 23px;
+    }
+
+
+    .page-transactions .clear-history-container {
+
+        justify-content: center;
+    }
+
+
+    .page-transactions .clear-history-button {
+
+        width: 100%;
+
+        max-width: 300px;
+    }
+
+
+    .page-transactions th,
+.page-transactions td {
+
+        padding: 11px;
+
+        white-space: nowrap;
+    }
+
+}

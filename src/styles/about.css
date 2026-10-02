@@ -1,0 +1,682 @@
+
+/* =====================================
+   COMMUNITY LIBRARY
+   ABOUT PAGE
+===================================== */
+
+.page-about * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+   BODY
+===================================== */
+
+.page-about {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image:
+        linear-gradient(
+            rgba(6, 29, 48, 0.88),
+            rgba(64, 90, 105, 0.92)
+        ),
+        url("../assets/library-background.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    background-repeat: no-repeat;
+
+    color: white;
+
+    min-height: 100vh;
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+.page-about header {
+    height: 70px;
+
+    padding: 0 52px;
+
+    background: #3f5766;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+/* =====================================
+   LOGO
+===================================== */
+
+.page-about .logo {
+    color: white;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================
+   NAVIGATION
+===================================== */
+
+.page-about nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+}
+
+
+.page-about nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    padding: 8px 0;
+
+    transition: 0.2s ease;
+}
+
+
+.page-about nav a:hover {
+    color: #00c8ff;
+}
+
+
+.page-about nav a.active {
+    color: #00c8ff;
+
+    border-bottom: 2px solid #00c8ff;
+}
+
+
+/* =====================================
+   MAIN
+===================================== */
+
+.page-about main {
+    width: 92%;
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    padding: 55px 0 65px;
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+
+.page-about .about-hero {
+    text-align: center;
+
+    padding: 65px 30px;
+
+    margin-bottom: 30px;
+
+    background: rgba(63, 87, 102, 0.88);
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    backdrop-filter: blur(4px);
+}
+
+
+.page-about .hero-icon {
+    display: block;
+
+    font-size: 48px;
+
+    margin-bottom: 15px;
+}
+
+
+.page-about .hero-content h1 {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+
+    color: white;
+}
+
+
+.page-about .hero-content p {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    color: #e5edf1;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================
+   ABOUT CARD
+===================================== */
+.page-about .about-card {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    gap: 25px;
+
+    padding: 35px;
+
+    margin-bottom: 30px;
+
+    background: rgba(101, 121, 135, 0.94);
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.page-about .section-icon {
+    width: 70px;
+
+    height: 70px;
+
+    border-radius: 15px;
+
+    background: #3f5766;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 32px;
+}
+
+
+.page-about .about-card h2 {
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+
+.page-about .about-card p {
+    color: #e5edf1;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 12px;
+}
+
+
+/* =====================================
+   SECTION HEADING
+===================================== */
+
+.page-about .section-heading {
+    text-align: center;
+
+    margin: 50px 0 30px;
+}
+
+
+.page-about .section-heading span {
+    display: block;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.page-about .section-heading p {
+    color: #e5edf1;
+
+    font-size: 16px;
+}
+
+
+/* =====================================
+   FEATURE GRID
+===================================== */
+
+.page-about .feature-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =====================================
+   FEATURE CARD
+===================================== */
+
+.page-about .feature-card {
+    background: rgba(101, 121, 135, 0.94);
+
+    padding: 28px 22px;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+
+    transition: 0.25s ease;
+}
+
+
+.page-about .feature-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 13px 28px rgba(0, 0, 0, 0.25);
+}
+
+
+.page-about .feature-icon {
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+
+.page-about .feature-card h3 {
+    font-size: 19px;
+
+    margin-bottom: 12px;
+}
+
+
+.page-about .feature-card p {
+    color: #e5edf1;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   SYSTEM INFORMATION
+===================================== */
+
+.page-about .info-card {
+    background: rgba(63, 87, 102, 0.94);
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    margin-top: 30px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.page-about .info-card h2 {
+    text-align: center;
+
+    font-size: 28px;
+
+    margin-bottom: 28px;
+}
+
+
+.page-about .info-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+.page-about .info-item {
+    background: rgba(101, 121, 135, 0.75);
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.page-about .info-label {
+    color: #b9c9d2;
+
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+}
+
+
+.page-about .info-item strong {
+    color: white;
+
+    font-size: 15px;
+}
+
+
+/* =====================================
+   CTA
+===================================== */
+
+.page-about .cta {
+    text-align: center;
+
+    margin-top: 30px;
+
+    padding: 45px 25px;
+
+    background: rgba(6, 29, 48, 0.90);
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+.page-about .cta h2 {
+    font-size: 30px;
+
+    margin-bottom: 12px;
+}
+
+
+.page-about .cta p {
+    color: #dce7ec;
+
+    font-size: 16px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================================
+   CTA BUTTONS
+===================================== */
+
+.page-about .cta-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.page-about .primary-btn,
+.page-about .secondary-btn {
+    min-width: 150px;
+
+    height: 48px;
+
+    padding: 0 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: 0.2s ease;
+}
+
+
+.page-about .primary-btn {
+    background: #1976d2;
+
+    color: white;
+}
+
+
+.page-about .primary-btn:hover {
+    background: #1565c0;
+
+    transform: translateY(-1px);
+}
+
+
+.page-about .secondary-btn {
+    background: #3f5766;
+
+    color: white;
+
+    border: 1px solid #80929e;
+}
+
+
+.page-about .secondary-btn:hover {
+    background: #526b7a;
+
+    transform: translateY(-1px);
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.page-about footer {
+    background: #3f5766;
+
+    color: #dce7ec;
+
+    text-align: center;
+
+    padding: 22px;
+
+    font-size: 14px;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 950px) {
+
+    .page-about header {
+        padding: 0 30px;
+    }
+
+
+    .page-about .feature-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 650px) {
+
+    .page-about header {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .page-about nav {
+        gap: 16px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .page-about nav a {
+        font-size: 13px;
+    }
+
+
+    .page-about main {
+        width: 94%;
+
+        padding-top: 30px;
+    }
+
+
+    .page-about .about-hero {
+        padding: 45px 20px;
+    }
+
+
+    .page-about .hero-content h1 {
+        font-size: 31px;
+    }
+
+
+    .page-about .hero-content p {
+        font-size: 15px;
+    }
+
+
+    .page-about .about-card {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding: 25px 20px;
+    }
+
+
+    .page-about .section-icon {
+        margin: 0 auto;
+    }
+
+
+    .page-about .about-card h2 {
+        font-size: 24px;
+    }
+
+
+    .page-about .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .page-about .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .page-about .cta-buttons {
+        flex-direction: column;
+    }
+
+
+    .page-about .primary-btn,
+.page-about .secondary-btn {
+        width: 100%;
+    }
+
+}
+
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media (max-width: 400px) {
+
+    .page-about .hero-content h1 {
+        font-size: 27px;
+    }
+
+
+    .page-about .section-heading span {
+        font-size: 25px;
+    }
+
+
+    .page-about .info-card,
+.page-about .about-card {
+        padding: 20px 15px;
+    }
+
+}
+/* =====================================
+   PAGE OPEN ANIMATION
+===================================== */
+
+.page-about main {
+    animation: pageOpen 0.8s ease;
+}
+
+@keyframes pageOpen {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}

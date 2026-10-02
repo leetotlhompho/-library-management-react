@@ -1,0 +1,315 @@
+/* =========================================
+   HOME PAGE
+   Community Library Management System
+========================================= */
+
+
+/* ---------- BASIC SETTINGS ---------- */
+
+.page-home * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-home {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #f4f6f8;
+    color: #ffffff;
+}
+
+
+/* ---------- HEADER ---------- */
+
+.page-home header {
+    width: 100%;
+    height: 70px;
+
+    background-color: #0b1f33;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 50px;
+}
+
+
+/* Library name */
+
+.page-home .logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #00c8ff;
+}
+
+
+/* Navigation */
+
+.page-home nav {
+    display: flex;
+    gap: 35px;
+}
+
+.page-home nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.page-home nav a:hover {
+    color: #00c8ff;
+}
+
+
+/* ---------- WELCOME SECTION ---------- */
+
+.page-home .welcome {
+    width: 100%;
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 30, 50, 0.75),
+            rgba(0, 30, 50, 0.75)
+        ),
+        url("../assets/library-background.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.page-home .welcome-content {
+    padding: 40px;
+}
+
+
+.page-home .welcome h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+
+.page-home .welcome p {
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+
+/* ---------- ROLE SELECTION AREA ---------- */
+
+.page-home main {
+    min-height: 430px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 40, 70, 0.75),
+            rgba(0, 40, 70, 0.75)
+        ),
+        url("../assets/library-background.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Main white/transparent box */
+
+.page-home .role-container {
+    width: 750px;
+    max-width: 95%;
+
+    padding: 45px;
+
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.18);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+
+/* Main heading */
+
+.page-home .role-container h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+
+/* Description */
+
+.page-home .role-container p {
+    font-size: 19px;
+    margin-bottom: 35px;
+}
+
+
+/* ---------- BUTTON AREA ---------- */
+
+.page-home .role-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+/* Both buttons */
+
+.page-home .role-button {
+    width: 220px;
+    height: 120px;
+
+    border: none;
+    border-radius: 15px;
+
+    color: white;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    transition: 0.3s;
+}
+
+
+/* Icons */
+
+.page-home .role-button .icon {
+    font-size: 35px;
+}
+
+
+/* ---------- USER BUTTON ---------- */
+
+.page-home .user-button {
+    background-color: #1976d2;
+}
+
+.page-home .user-button:hover {
+    background-color: #0d5eac;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ---------- ADMIN BUTTON ---------- */
+
+.page-home .admin-button {
+    background-color: #d32f2f;
+}
+
+.page-home .admin-button:hover {
+    background-color: #a92323;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.page-home footer {
+    width: 100%;
+
+    background-color: #0b1f33;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+.page-home footer p {
+    font-size: 15px;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 700px) {
+
+    /* Header */
+
+    .page-home header {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    /* Welcome */
+
+    .page-home .welcome h1 {
+        font-size: 32px;
+    }
+
+    .page-home .welcome p {
+        font-size: 17px;
+    }
+
+
+    /* Role container */
+
+    .page-home .role-container {
+        padding: 30px 20px;
+    }
+
+
+    .page-home .role-container h2 {
+        font-size: 27px;
+    }
+
+
+    /* Buttons */
+
+    .page-home .role-buttons {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 15px;
+    }
+
+
+    .page-home .role-button {
+        width: 90%;
+    }
+
+}

@@ -1,0 +1,964 @@
+/* =====================================
+   COMMUNITY LIBRARY
+   USER MANAGEMENT
+===================================== */
+
+.page-manage-users * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+   BODY
+===================================== */
+
+.page-manage-users {
+    font-family: Arial, Helvetica, sans-serif;
+
+     background:
+        linear-gradient(
+            rgba(0, 30, 50, 0.88),
+            rgba(0, 30, 50, 0.88)
+        ),
+        url("../assets/library-background.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+
+
+    color: white;
+
+    min-height: 100vh;
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+.page-manage-users header {
+    width: 100%;
+
+    height: 70px;
+
+    background: #3f5766;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 52px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =====================================
+   LOGO
+===================================== */
+
+.page-manage-users .logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: white;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================
+   NAVIGATION
+===================================== */
+
+.page-manage-users nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.page-manage-users nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: 0.2s ease;
+}
+
+
+.page-manage-users nav a:hover {
+    color: #00c8ff;
+}
+
+
+/* =====================================
+   MAIN
+===================================== */
+
+.page-manage-users main {
+    width: 92%;
+
+    max-width: 1250px;
+
+    margin: 45px auto 60px;
+}
+
+
+/* =====================================
+   PAGE TITLE
+===================================== */
+
+.page-manage-users .page-title {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.page-manage-users .page-title h1 {
+    color: white;
+
+    font-size: 38px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+
+.page-manage-users .page-title p {
+    color: #e5edf1;
+
+    font-size: 18px;
+}
+
+
+/* =====================================
+   CARD
+===================================== */
+
+.page-manage-users .user-card {
+    width: 100%;
+
+    background: #657987;
+
+    border-radius: 18px;
+
+    padding: 32px;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+}
+
+
+/* =====================================
+   CARD TITLE
+===================================== */
+
+.page-manage-users .user-card h2 {
+    color: white;
+
+    font-size: 27px;
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+
+.page-manage-users .card-description {
+    color: #e5edf1;
+
+    font-size: 16px;
+
+    margin-bottom: 28px;
+}
+
+
+/* =====================================
+   FORM
+===================================== */
+
+.page-manage-users #userForm {
+    width: 100%;
+}
+
+
+/* =====================================
+   FORM GRID
+===================================== */
+
+.page-manage-users .form-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 22px 30px;
+}
+
+
+/* =====================================
+   FORM GROUP
+===================================== */
+
+.page-manage-users .form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    width: 100%;
+}
+
+
+.page-manage-users .form-group label {
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================
+   INPUT
+===================================== */
+
+.page-manage-users .form-group input {
+    width: 100%;
+
+    height: 50px;
+
+    padding: 0 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #333;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+
+.page-manage-users .form-group input,
+.page-manage-users .form-group select  {
+    color: #777;
+}
+
+
+.page-manage-users .form-group input:focus,
+.page-manage-users .form-group select:focus  {
+    outline: 3px solid rgba(0, 200, 255, 0.25);
+
+    box-shadow: 0 0 0 1px #1976d2;
+}
+
+
+/* =====================================
+   ROLE
+===================================== */
+
+.page-manage-users .form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    padding-right: 40px;
+    background-image:
+        linear-gradient(45deg, transparent 50%, #555 50%),
+        linear-gradient(135deg, #555 50%, transparent 50%);
+    background-position:
+        calc(100% - 22px) 22px,
+        calc(100% - 16px) 22px;
+    background-size: 6px 6px, 6px 6px;
+    background-repeat: no-repeat;
+}
+
+
+/* =====================================
+   BUTTON AREA
+===================================== */
+
+.page-manage-users .form-buttons {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+
+/* =====================================
+   ADD USER BUTTON
+===================================== */
+
+.page-manage-users .add-btn {
+    min-width: 190px;
+
+    height: 50px;
+
+    padding: 0 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #1976d2;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.page-manage-users .add-btn:hover {
+    background: #1565c0;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
+}
+
+
+.page-manage-users .add-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =====================================
+   CANCEL BUTTON
+===================================== */
+
+.page-manage-users .cancel-btn {
+    min-width: 150px;
+
+    height: 50px;
+
+    padding: 0 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #3f5766;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.page-manage-users .cancel-btn:hover {
+    background: #304653;
+}
+
+
+/* =====================================
+   MESSAGE
+===================================== */
+
+.page-manage-users .message {
+    min-height: 22px;
+
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+.page-manage-users .message.success {
+    color: #d8ffd8;
+}
+
+
+.page-manage-users .message.error {
+    color: #ffd1d1;
+}
+
+
+/* =====================================
+   REGISTERED USERS HEADER
+===================================== */
+
+.page-manage-users .table-header {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 22px;
+}
+
+
+.page-manage-users .table-header h2 {
+    margin-bottom: 7px;
+}
+
+
+/* =====================================
+   USER COUNT
+===================================== */
+
+.page-manage-users .user-count {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 115px;
+
+    height: 45px;
+
+    padding: 0 18px;
+
+    background: #3f5766;
+
+    border-radius: 10px;
+
+    color: #00c8ff;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================
+   TABLE WRAPPER
+===================================== */
+
+.page-manage-users .table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================
+   TABLE
+===================================== */
+
+.page-manage-users table {
+    width: 100%;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    background: white;
+
+    color: #333;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+/* =====================================
+   TABLE HEADER
+===================================== */
+
+.page-manage-users thead {
+    background: #061d30;
+
+    color: white;
+}
+
+
+.page-manage-users th {
+    padding: 17px 18px;
+
+    text-align: left;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================
+   TABLE BODY
+===================================== */
+
+.page-manage-users tbody {
+    background: white;
+}
+
+
+.page-manage-users td {
+    padding: 17px 18px;
+
+    color: #333;
+
+    font-size: 14px;
+
+    border-bottom: 1px solid #dddddd;
+
+    vertical-align: middle;
+}
+
+
+.page-manage-users tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+.page-manage-users tbody tr:hover {
+    background: #f5f7f8;
+}
+
+
+/* =====================================
+   ROLE BADGE
+===================================== */
+
+.page-manage-users .role-user {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 65px;
+
+    padding: 6px 13px;
+
+    border-radius: 20px;
+
+    background: #405a69;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+
+/* =====================================
+   ACTIONS
+===================================== */
+
+.page-manage-users td:last-child {
+    white-space: nowrap;
+}
+
+
+/* =====================================
+   UPDATE BUTTON
+===================================== */
+
+.page-manage-users .update-btn {
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 9px 17px;
+
+    background: #ffc107;
+
+    color: #222;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-right: 6px;
+
+    transition: 0.2s ease;
+}
+
+
+.page-manage-users .update-btn:hover {
+    background: #e0a800;
+
+    transform: translateY(-1px);
+}
+
+
+/* =====================================
+   DELETE BUTTON
+===================================== */
+
+.page-manage-users .delete-btn {
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 9px 17px;
+
+    background: #dc3545;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.page-manage-users .delete-btn:hover {
+    background: #b02a37;
+
+    transform: translateY(-1px);
+}
+
+
+/* =====================================
+   EMPTY TABLE
+===================================== */
+
+.page-manage-users .empty {
+    padding: 35px !important;
+
+    text-align: center !important;
+
+    color: #666 !important;
+
+    font-size: 15px !important;
+}
+
+
+/* =====================================
+   BACK TO DASHBOARD
+===================================== */
+
+.page-manage-users .back-container {
+    text-align: center;
+
+    margin: 35px 0 10px;
+}
+
+
+.page-manage-users .back-container a {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 210px;
+
+    height: 50px;
+
+    padding: 0 25px;
+
+    background: #1976d2;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: 0.2s ease;
+}
+
+
+.page-manage-users .back-container a:hover {
+    background: #1565c0;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.page-manage-users footer {
+    width: 100%;
+
+    background: #3f5766;
+
+    color: #e5edf1;
+
+    text-align: center;
+
+    padding: 20px;
+
+    font-size: 14px;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+    .page-manage-users header {
+        padding: 0 25px;
+    }
+
+
+    .page-manage-users main {
+        width: 94%;
+    }
+
+
+    .page-manage-users .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .page-manage-users .page-title h1 {
+        font-size: 34px;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+    .page-manage-users header {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .page-manage-users .logo {
+        font-size: 20px;
+    }
+
+
+    .page-manage-users nav {
+        gap: 18px;
+    }
+
+
+    .page-manage-users nav a {
+        font-size: 13px;
+    }
+
+
+    .page-manage-users main {
+        width: 94%;
+
+        margin-top: 30px;
+    }
+
+
+    .page-manage-users .page-title {
+        margin-bottom: 28px;
+    }
+
+
+    .page-manage-users .page-title h1 {
+        font-size: 29px;
+    }
+
+
+    .page-manage-users .page-title p {
+        font-size: 15px;
+
+        line-height: 1.5;
+    }
+
+
+    .page-manage-users .user-card {
+        padding: 22px 16px;
+
+        border-radius: 14px;
+    }
+
+
+    .page-manage-users .user-card h2 {
+        font-size: 24px;
+    }
+
+
+    .page-manage-users .card-description {
+        font-size: 14px;
+
+        line-height: 1.5;
+    }
+
+
+    .page-manage-users .form-buttons {
+        flex-direction: column;
+    }
+
+
+    .page-manage-users .add-btn,
+.page-manage-users .cancel-btn {
+        width: 100%;
+    }
+
+
+    .page-manage-users .table-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .page-manage-users .user-count {
+        align-self: flex-start;
+    }
+
+
+    .page-manage-users th,
+.page-manage-users td {
+        padding: 12px;
+
+        font-size: 13px;
+    }
+
+
+    .page-manage-users .update-btn,
+.page-manage-users .delete-btn {
+        display: block;
+
+        width: 100%;
+
+        margin: 4px 0;
+    }
+
+
+    .page-manage-users .back-container a {
+        width: 100%;
+    }
+
+}
+
+
+/* =====================================
+   VERY SMALL SCREEN
+===================================== */
+
+@media (max-width: 400px) {
+
+    .page-manage-users .page-title h1 {
+        font-size: 26px;
+    }
+
+
+    .page-manage-users .user-card {
+        padding: 18px 12px;
+    }
+
+
+    .page-manage-users .user-card h2 {
+        font-size: 22px;
+    }
+
+}
+
+
+.page-manage-users .form-group select#role,
+.page-manage-users .form-group select {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 0 40px 0 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 15px;
+    font-weight: normal;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image:
+        linear-gradient(45deg, transparent 50%, #555 50%),
+        linear-gradient(135deg, #555 50%, transparent 50%);
+    background-position:
+        calc(100% - 22px) 22px,
+        calc(100% - 16px) 22px;
+    background-size: 6px 6px, 6px 6px;
+    background-repeat: no-repeat;
+}
+
+.page-manage-users .form-group select:focus {
+    outline: 3px solid rgba(0, 200, 255, 0.25);
+    box-shadow: 0 0 0 1px #1976d2;
+}

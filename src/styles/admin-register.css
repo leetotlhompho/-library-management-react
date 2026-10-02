@@ -1,0 +1,340 @@
+/* =====================================
+   ADMIN REGISTRATION
+===================================== */
+
+
+.page-admin-register * {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+/* =====================================
+   BODY
+===================================== */
+
+.page-admin-register {
+
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 30, 50, 0.88),
+            rgba(0, 30, 50, 0.88)
+        ),
+        url("../assets/library-background.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+}
+
+
+
+/* =====================================
+   CONTAINER
+===================================== */
+
+.page-admin-register .register-container {
+
+    width: 100%;
+
+    padding: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+
+/* =====================================
+   CARD
+===================================== */
+
+.page-admin-register .register-card {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 40px;
+
+    background:
+        rgba(255, 255, 255, 0.14);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(14px);
+
+    box-shadow:
+        0 15px 40px
+        rgba(0, 0, 0, 0.4);
+
+}
+
+
+
+/* =====================================
+   LOGO
+===================================== */
+
+.page-admin-register .logo {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #00c8ff;
+
+    border-radius: 50%;
+
+    font-size: 35px;
+
+}
+
+
+
+/* =====================================
+   HEADING
+===================================== */
+
+.page-admin-register .register-card h1 {
+
+    text-align: center;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+
+}
+
+
+
+.page-admin-register .subtitle {
+
+    text-align: center;
+
+    color: #dce7ed;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+/* =====================================
+   FORM
+===================================== */
+
+.page-admin-register .form-group {
+
+    margin-bottom: 18px;
+
+}
+
+
+
+.page-admin-register .form-group label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+}
+
+
+
+.page-admin-register .form-group input {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    font-size: 15px;
+
+}
+
+
+
+.page-admin-register .form-group input:focus {
+
+    box-shadow:
+        0 0 0 2px #00c8ff;
+
+}
+
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+.page-admin-register button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #1976d2;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+
+.page-admin-register button:hover {
+
+    background-color: #0d5eac;
+
+}
+
+
+
+/* =====================================
+   MESSAGE
+===================================== */
+
+.page-admin-register .message {
+
+    min-height: 20px;
+
+    margin-bottom: 10px;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+
+.page-admin-register .message.success {
+
+    color: #7dffb2;
+
+}
+
+
+
+.page-admin-register .message.error {
+
+    color: #ff8f8f;
+
+}
+
+
+
+/* =====================================
+   LOGIN LINK
+===================================== */
+
+.page-admin-register .login-link {
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #dce7ed;
+
+    font-size: 14px;
+
+}
+
+
+
+.page-admin-register .login-link a {
+
+    color: #00c8ff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    margin-left: 5px;
+
+}
+
+
+
+.page-admin-register .login-link a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+    .page-admin-register .register-card {
+
+        padding: 30px 22px;
+
+    }
+
+
+    .page-admin-register .register-card h1 {
+
+        font-size: 25px;
+
+    }
+
+}

@@ -1,0 +1,737 @@
+/* =====================================
+   BOOK MANAGEMENT
+   COMMUNITY LIBRARY
+===================================== */
+
+.page-manage-books * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.page-manage-books {
+
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+     background:
+        linear-gradient(
+            rgba(0, 30, 50, 0.88),
+            rgba(0, 30, 50, 0.88)
+        ),
+        url("../assets/library-background.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+
+    color: white;
+
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+.page-manage-books header {
+
+    height: 89px;
+
+    background-color: #081d31;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 72px;
+
+}
+
+
+.page-manage-books .logo {
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: #00c8ff;
+
+}
+
+
+.page-manage-books nav {
+
+    display: flex;
+
+    gap: 28px;
+
+}
+
+
+.page-manage-books nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+}
+
+
+.page-manage-books nav a:hover {
+
+    color: #00c8ff;
+
+}
+
+
+
+/* =====================================
+   MAIN
+===================================== */
+
+.page-manage-books main {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 45px 25px 60px;
+
+}
+
+
+
+/* =====================================
+   PAGE TITLE
+===================================== */
+
+.page-manage-books .page-title {
+
+    margin-bottom: 30px;
+
+}
+
+
+.page-manage-books .page-title h1 {
+
+    font-size: 38px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.page-manage-books .page-title p {
+
+    color: #e0e8ed;
+
+    font-size: 17px;
+
+}
+
+
+
+/* =====================================
+   CARD
+===================================== */
+
+.page-manage-books .book-card {
+
+    background-color: #657987;
+
+    border-radius: 18px;
+
+    padding: 32px;
+
+    margin-bottom: 30px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.22);
+
+}
+
+
+.page-manage-books .book-card h2 {
+
+    font-size: 27px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.page-manage-books .card-description {
+
+    color: #e1e8ec;
+
+    font-size: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* =====================================
+   FORM
+===================================== */
+
+.page-manage-books .form-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px 25px;
+
+}
+
+
+.page-manage-books .form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.page-manage-books .form-group label {
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+}
+
+
+.page-manage-books .form-group input {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: white;
+
+    color: #333;
+
+    font-size: 15px;
+
+    outline: none;
+
+}
+
+
+.page-manage-books .form-group input::placeholder {
+
+    color: #888;
+
+}
+
+
+.page-manage-books .form-group input:focus {
+
+    box-shadow:
+        0 0 0 3px #00c8ff;
+
+}
+
+
+.page-manage-books .quantity-group {
+
+    max-width: 50%;
+
+}
+
+
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.page-manage-books .form-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 28px;
+
+}
+
+
+.page-manage-books .form-buttons button {
+
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 13px 28px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.page-manage-books .add-btn {
+
+    background-color: #1976d2;
+
+    color: white;
+
+}
+
+
+.page-manage-books .add-btn:hover {
+
+    background-color: #0d5eac;
+
+}
+
+
+.page-manage-books .cancel-btn {
+
+    background-color: #6c757d;
+
+    color: white;
+
+}
+
+
+.page-manage-books .cancel-btn:hover {
+
+    background-color: #545b62;
+
+}
+
+
+
+/* =====================================
+   MESSAGE
+===================================== */
+
+.page-manage-books .message {
+
+    margin-top: 18px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* =====================================
+   TABLE HEADER
+===================================== */
+
+.page-manage-books .table-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+.page-manage-books .table-header .card-description {
+
+    margin-bottom: 0;
+
+}
+
+
+.page-manage-books .book-count {
+
+    background-color: #1976d2;
+
+    color: white;
+
+    padding: 9px 15px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* =====================================
+   TABLE
+===================================== */
+
+.page-manage-books .table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+}
+
+
+.page-manage-books table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+
+    color: #333;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+}
+
+
+.page-manage-books thead {
+
+    background-color: #081d31;
+
+    color: white;
+
+}
+
+
+.page-manage-books th {
+
+    padding: 15px 12px;
+
+    text-align: left;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+
+}
+
+
+.page-manage-books td {
+
+    padding: 13px 12px;
+
+    border-bottom: 1px solid #ddd;
+
+    font-size: 14px;
+
+}
+
+
+.page-manage-books tbody tr:hover {
+
+    background-color: #f2f5f7;
+
+}
+
+
+
+/* =====================================
+   STATUS
+===================================== */
+
+.page-manage-books .status {
+
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    border-radius: 15px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+}
+
+
+.page-manage-books .available {
+
+    background-color: #d1e7dd;
+
+    color: #0f5132;
+
+}
+
+
+.page-manage-books .low-stock {
+
+    background-color: #fff3cd;
+
+    color: #664d03;
+
+}
+
+
+.page-manage-books .out-stock {
+
+    background-color: #f8d7da;
+
+    color: #842029;
+
+}
+
+
+
+/* =====================================
+   LOW STOCK ROW
+===================================== */
+
+.page-manage-books .low-row {
+
+    background-color: #fffaf0;
+
+}
+
+
+
+/* =====================================
+   OUT OF STOCK ROW
+===================================== */
+
+.page-manage-books .out-row {
+
+    background-color: #fff1f1;
+
+}
+
+
+
+/* =====================================
+   ACTION BUTTONS
+===================================== */
+
+.page-manage-books .action-btn {
+
+    border: none;
+
+    border-radius: 5px;
+
+    padding: 7px 11px;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-right: 4px;
+
+}
+
+
+.page-manage-books .update-btn {
+
+    background-color: #1976d2;
+
+}
+
+
+.page-manage-books .update-btn:hover {
+
+    background-color: #0d5eac;
+
+}
+
+
+.page-manage-books .delete-btn {
+
+    background-color: #dc3545;
+
+}
+
+
+.page-manage-books .delete-btn:hover {
+
+    background-color: #b02a37;
+
+}
+
+
+
+/* =====================================
+   BACK BUTTON
+===================================== */
+
+.page-manage-books .back-container {
+
+    text-align: center;
+
+    margin-top: 10px;
+
+}
+
+
+.page-manage-books .back-container a {
+
+    display: inline-block;
+
+    background-color: #081d31;
+
+    color: white;
+
+    padding: 12px 24px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+.page-manage-books .back-container a:hover {
+
+    background-color: #1976d2;
+
+}
+
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.page-manage-books footer {
+
+    height: 68px;
+
+    background-color: #081d31;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.page-manage-books footer p {
+
+    font-size: 15px;
+
+}
+
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 750px) {
+
+    .page-manage-books header {
+
+        height: auto;
+
+        min-height: 70px;
+
+        padding: 15px 20px;
+
+    }
+
+
+    .page-manage-books .logo {
+
+        font-size: 20px;
+
+    }
+
+
+    .page-manage-books nav {
+
+        gap: 12px;
+
+    }
+
+
+    .page-manage-books nav a {
+
+        font-size: 14px;
+
+    }
+
+
+    .page-manage-books main {
+
+        padding: 30px 15px;
+
+    }
+
+
+    .page-manage-books .page-title h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .page-manage-books .form-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .page-manage-books .quantity-group {
+
+        max-width: 100%;
+
+    }
+
+
+    .page-manage-books .book-card {
+
+        padding: 22px;
+
+    }
+
+
+    .page-manage-books .table-header {
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+    }
+
+}

@@ -1,0 +1,50 @@
+/* Small additions used by the React version (validation + flash messages).
+   Everything else comes from the original per-page stylesheets. */
+
+.field-error {
+  display: block;
+  margin-top: 6px;
+  color: #ff8a8a;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+input[aria-invalid="true"],
+select[aria-invalid="true"] {
+  border-color: #ff6b6b !important;
+}
+
+.page-manage-books .message,
+.page-transactions .message,
+.page-user-dashboard .message {
+  min-height: 22px;
+  margin-top: 14px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.page-manage-books .message.success,
+.page-transactions .message.success,
+.page-user-dashboard .message.success { color: #5fe08a; }
+
+.page-manage-books .message.error,
+.page-transactions .message.error,
+.page-user-dashboard .message.error { color: #ff8a8a; }
+
+.low-stock-alert {
+  margin: 0 0 16px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: rgba(255, 193, 7, 0.15);
+  border: 1px solid rgba(255, 193, 7, 0.6);
+  color: #ffd75e;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.route-fallback { padding: 60px 20px; text-align: center; font-family: Arial, sans-serif; }
+.route-fallback a { color: #00c8ff; }
+
+/* Page wrappers replace <body> from the original pages, so remove the default body margin. */
+html, body, #root { margin: 0; padding: 0; }
+body { min-height: 100vh; }

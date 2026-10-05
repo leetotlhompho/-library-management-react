@@ -32,8 +32,8 @@
 
     background:
         linear-gradient(
-            rgba(0, 30, 50, 0.88),
-            rgba(0, 30, 50, 0.88)
+            rgba(0, 30, 50, 0.38),
+            rgba(0, 30, 50, 0.38)
         ),
         url("../assets/library-background.png");
 

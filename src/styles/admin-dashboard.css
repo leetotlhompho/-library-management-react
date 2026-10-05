@@ -21,8 +21,8 @@
 
      background:
         linear-gradient(
-            rgba(0, 30, 50, 0.88),
-            rgba(0, 30, 50, 0.88)
+            rgba(0, 30, 50, 0.38),
+            rgba(0, 30, 50, 0.38)
         ),
         url("../assets/library-background.png");
 
@@ -167,7 +167,8 @@
 
 .page-admin-dashboard .dashboard-card {
 
-    background-color: #657987;
+    background-color: rgba(101, 121, 135, 0.74);
+    backdrop-filter: blur(3px);
 
     border-radius: 15px;
 
@@ -242,7 +243,8 @@
 
 .page-admin-dashboard .content-section {
 
-    background-color: #657987;
+    background-color: rgba(101, 121, 135, 0.74);
+    backdrop-filter: blur(3px);
 
     border-radius: 18px;
 
@@ -405,7 +407,8 @@
 
 .page-admin-dashboard .management-card {
 
-    background-color: #657987;
+    background-color: rgba(101, 121, 135, 0.74);
+    backdrop-filter: blur(3px);
 
     border-radius: 18px;
 

@@ -78,8 +78,8 @@
 
     background:
         linear-gradient(
-            rgba(0, 30, 50, 0.75),
-            rgba(0, 30, 50, 0.75)
+            rgba(0, 30, 50, 0.3),
+            rgba(0, 30, 50, 0.3)
         ),
         url("../assets/library-background.png");
 
@@ -118,8 +118,8 @@
 
     background:
         linear-gradient(
-            rgba(0, 40, 70, 0.75),
-            rgba(0, 40, 70, 0.75)
+            rgba(0, 40, 70, 0.3),
+            rgba(0, 40, 70, 0.3)
         ),
         url("../assets/library-background.png");
 
